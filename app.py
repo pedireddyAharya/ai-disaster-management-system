@@ -368,7 +368,7 @@ client = Groq(api_key=st.secrets["GROQ_API_KEY"]) # 🔒 don't hardcode real key
 def ai_chat(msg):
     try:
         response = client.chat.completions.create(
-           model="openai/gpt-oss-20b",,
+           model="openai/gpt-oss-20b",
             messages=[
                 {
                     "role": "system",
